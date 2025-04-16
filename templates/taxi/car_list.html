@@ -11,7 +11,7 @@
         <tr>
           <td><a href="{% url 'taxi:car-detail' car.id %}">{{ car.id }}</a></td>
           <td>{{ car.model }}</td>
-          <td>{{ car.manufacturer__name }}</td>
+          <td>{{ car.manufacturer.name }}</td>
         </tr>
     {% endfor %}
     </table>
